@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">EnergyHub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/~juming.lai/w209/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/~juming.lai/w209/time-series">Time-series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/~juming.lai/w209/appliance">Appliance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/~juming.lai/w209/breakdown">LivingSpace</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/~juming.lai/w209/about">About<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <h2 class="display-5">
+                About
+            </h2>
+            <p class="lead">Visualization goal:</p>
+            <p>Analyze and Visualize Electricity Demand by time, by living space and by appliance<br>
+                Learn effect of weather on electricity usage<br>
+            <p class="lead">Intended audience:</p>
+            <p>Energy stakeholders including utility companies and homeowners</p>
+            <p class="lead">Data source:</p>
+            <p>Sourced from Kaggle SMART HOME DATA WITH WEATHER INFORMATION.<br>
+                The dataset has elaborate time-series data for electricity usage in a home for 2016.<br>
+                It has readings for multiple devices and multiple areas of a home.
+                Weather data for the years 2016. Sampled by the hour. <br>
+                Data quality: Both overall power usage and temperature readings are clean, without nulls or outliers.
+            </p>
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+        <h2 style="text-align:center">Our Team</h2>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="{{url_for('static',filename = 'juming.png')}}" alt="Juming" style="width:100%">
+                    <div class="container">
+                        <h2>Juming Lai</h2>
+                        <p class="title">Website hosting</p>
+                        <p>Tech: HTML, CSS</p>
+                        <p>juming.lai@berkeley.edu</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="{{url_for('static',filename = 'dera.png')}}" alt="Dera" style="width:100%">
+                    <div class="container">
+                        <h2>Dera</h2>
+                        <p class="title">Living Space Breakdown Page</p>
+                        <p>Tech: Tableau</p>
+                        <p>cmojekwu@berkeley.edu</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="{{url_for('static',filename = 'savita.png')}}" alt="Savita" style="width:100%">
+                    <div class="container">
+                        <h2>Savita Chari</h2>
+                        <p class="title">Appliance Breakdown page</p>
+                        <p>Tech: D3</p>
+                        <p>savita@berkeley.edu</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="{{url_for('static',filename = 'kishan.png')}}" alt="Kishan" style="width:100%">
+                    <div class="container">
+                        <h2>abc</h2>
+                        <p class="title">Time Series Page</p>
+                        <p>Tech: Altair</p>
+                        <p>shahkb@berkeley.edu</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
